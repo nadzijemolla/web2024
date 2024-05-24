@@ -1,0 +1,6 @@
+komande react
+
+npm init
+npm run dev
+npm i react-router-dom
+npm install react-leaflet leaflet
