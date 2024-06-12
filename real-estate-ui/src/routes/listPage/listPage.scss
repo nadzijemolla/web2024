@@ -1,0 +1,40 @@
+@import "../../responsive.scss";
+.listPage {
+    display: flex;
+    height: 100%;
+    .listContainer {
+        flex: 3;
+        height: 100%;
+        .wrapper {
+            height: 100%;
+            padding-right: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            overflow-y: scroll;
+            padding-bottom: 50px;
+        }
+    }
+    .mapContainer {
+        flex: 2;
+        height: 100%;
+        background-image: url('/map.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        @include md {
+            display: none;
+        }
+    }
+    .imgContainer {
+        flex: 2;
+        height: 100%;
+        background-image: url('/realestate.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        @include md {
+            display: none;
+        }
+    }
+}
